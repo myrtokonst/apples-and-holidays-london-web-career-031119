@@ -65,7 +65,7 @@ holiday.each do |supply|
    cap_holiday = holiday.to_s.split("_").collect do |word|
     word.capitalize
   end.join(" ")
-  string_supply= supply.join("")
+  string_supply= supply.join(",")
   puts "#{cap_holiday}: #{string_supply}"
 end 
 end
