@@ -68,13 +68,15 @@ end
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
-  bbq_holidays = []
- holiday_names.each do |holiday, props|
-      bbq_holidays << holiday if props.include?("BBQ")
+bbq_hols =[]
+holiday_hash.each do |season, holiday_name|
+  holiday_name.each do |holiday, supply|
+    if supply == "BBQ"
+      bbq_hols << holiday
     end
-  end
-  bbq_holidays
-end	
+  end 
+end
+bbq_hols
 end
 
 
