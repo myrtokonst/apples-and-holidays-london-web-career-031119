@@ -72,7 +72,7 @@ bbq_hols = []
 holiday_hash.each do |season,holiday|
   holiday.each do |holiday, supply|
     if supply == "BBQ"
-      bbq_hols.push(holiday)
+      bbq_hols << holiday
     end 
   end 
 end
