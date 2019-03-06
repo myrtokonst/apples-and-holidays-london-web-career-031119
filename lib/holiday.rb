@@ -62,8 +62,9 @@ holiday_hash.each do |season, holiday|
   cap_season= season.to_s.capitalize
   puts "cap_season:"
 holiday.each do |supply|
-  cap_holiday = holiday
-  puts "#{holiday}: #{supply}"
+  cap_holiday = holiday.to_s.collect do 
+  string_supply= supply.join("")
+  puts "#{cap_holiday}: #{string_supply}"
 end 
 end
 end
